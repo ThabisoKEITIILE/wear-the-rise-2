@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WEAR THE RISE — Rise in the wild. Dress for the journey.</title>
+<meta name="description" content="WEAR THE RISE — premium safari-inspired clothing crafted in Maun, Botswana. Rise in the wild. Dress for the journey.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="home.html" class="brand-mark">Wear The Rise</a>
+    <nav class="nav">
+      <a href="home.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="collections.html">Collections</a>
+      <a href="lookbook.html">Lookbook</a>
+      <a href="about.html">About</a>
+      <a href="community.html">Community</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="cart-btn" onclick="openCart()">Cart <span class="cart-count">0</span></button>
+    <button class="menu-toggle">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" style="background-image: url('images/hero-home.png');">
+  <div class="hero-content">
+    <div class="hero-eyebrow">Born in Maun, Botswana</div>
+    <h1>Rise in the wild.<br>Dress for the journey.</h1>
+    <p>Premium safari-inspired clothing — crafted for the bush, the desert, and the street. Built to be worn for years, not seasons.</p>
+    <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+      <a href="shop.html" class="btn btn-primary">Shop the Collection</a>
+      <a href="about.html" class="btn btn-outline">Our Story</a>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="section">
+  <div class="container center">
+    <div class="section-eyebrow">The Brand</div>
+    <h2 class="section-title fade-in">A wardrobe for the African adventure.</h2>
+    <p class="section-lede fade-in">
+      WEAR THE RISE is a Botswana-grown clothing house designing safari-ready apparel for a new generation of African explorers. Every garment is cut from honest, hard-wearing fabrics — linen, organic cotton, brushed canvas — and finished with details that work as hard as you do. From dawn river crossings on the Okavango to long city evenings in Gaborone, our pieces are built to rise with you.
+    </p>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="section" style="background: var(--bg-soft);">
+  <div class="container">
+    <div class="center">
+      <div class="section-eyebrow">Featured</div>
+      <h2 class="section-title">This week's three best pieces</h2>
+    </div>
+    <div class="grid-3 fade-in" style="margin-top: 56px;">
+      <article class="product" data-category="tops">
+        <div class="product-img"><img src="images/product-shirt-1.png" alt="Okavango Linen Shirt"></div>
+        <div class="product-body">
+          <span class="product-cat">Safari Tops</span>
+          <h3 class="product-name">Okavango Linen Shirt</h3>
+          <p class="product-desc">A breathable, sun-bleached linen shirt with horn buttons and twin chest pockets. Wears like an old friend by week two.</p>
+          <div class="product-price">P 850</div>
+          <div class="product-actions">
+            <button class="btn btn-dark" onclick="addToCart('shirt-1','Okavango Linen Shirt',850,'product-shirt-1.png')">Add to Cart</button>
+            <button class="btn btn-primary" onclick="orderProductWhatsapp('Okavango Linen Shirt',850)">Order</button>
+          </div>
+        </div>
+      </article>
+      <article class="product" data-category="bottoms">
+        <div class="product-img"><img src="images/product-pants-1.png" alt="Kalahari Cargo Trouser"></div>
+        <div class="product-body">
+          <span class="product-cat">Bottoms</span>
+          <h3 class="product-name">Kalahari Cargo Trouser</h3>
+          <p class="product-desc">Heavy-weight ripstop cargos with reinforced knees, deep pockets, and an adjustable waist for long days on the move.</p>
+          <div class="product-price">P 1,200</div>
+          <div class="product-actions">
+            <button class="btn btn-dark" onclick="addToCart('pants-1','Kalahari Cargo Trouser',1200,'product-pants-1.png')">Add to Cart</button>
+            <button class="btn btn-primary" onclick="orderProductWhatsapp('Kalahari Cargo Trouser',1200)">Order</button>
+          </div>
+        </div>
+      </article>
+      <article class="product" data-category="accessories">
+        <div class="product-img"><img src="images/product-hat-1.png" alt="Maun Bush Hat"></div>
+        <div class="product-body">
+          <span class="product-cat">Accessories</span>
+          <h3 class="product-name">Maun Bush Hat</h3>
+          <p class="product-desc">Wide-brim canvas safari hat with leather chin cord, ventilated crown and a brim that holds its shape after a hundred storms.</p>
+          <div class="product-price">P 450</div>
+          <div class="product-actions">
+            <button class="btn btn-dark" onclick="addToCart('hat-1','Maun Bush Hat',450,'product-hat-1.png')">Add to Cart</button>
+            <button class="btn btn-primary" onclick="orderProductWhatsapp('Maun Bush Hat',450)">Order</button>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="center" style="margin-top: 40px;">
+      <a href="shop.html" class="btn btn-dark">View All Products</a>
+    </div>
+  </div>
+</section>
+
+<!-- COLLECTIONS PREVIEW -->
+<section class="section">
+  <div class="container">
+    <div class="center">
+      <div class="section-eyebrow">Collections</div>
+      <h2 class="section-title">Four ways to wear the rise.</h2>
+    </div>
+    <div class="grid-4 fade-in" style="margin-top: 48px;">
+      <a href="collections.html" class="product" style="text-decoration:none">
+        <div class="product-img"><img src="images/collection-safari-essentials.png" alt="Safari Essentials"></div>
+        <div class="product-body"><span class="product-cat">01</span><h3 class="product-name">Safari Essentials</h3></div>
+      </a>
+      <a href="collections.html" class="product" style="text-decoration:none">
+        <div class="product-img"><img src="images/collection-desert-explorer.png" alt="Desert Explorer Wear"></div>
+        <div class="product-body"><span class="product-cat">02</span><h3 class="product-name">Desert Explorer</h3></div>
+      </a>
+      <a href="collections.html" class="product" style="text-decoration:none">
+        <div class="product-img"><img src="images/collection-urban-safari.png" alt="Urban Safari Style"></div>
+        <div class="product-body"><span class="product-cat">03</span><h3 class="product-name">Urban Safari</h3></div>
+      </a>
+      <a href="collections.html" class="product" style="text-decoration:none">
+        <div class="product-img"><img src="images/collection-premium-expedition.png" alt="Premium Expedition Gear"></div>
+        <div class="product-body"><span class="product-cat">04</span><h3 class="product-name">Premium Expedition</h3></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- LOOKBOOK TEASER -->
+<section class="section" style="background: var(--bg-soft);">
+  <div class="container">
+    <div class="grid-2 fade-in">
+      <div>
+        <div class="section-eyebrow">Lookbook</div>
+        <h2 class="section-title">How it wears in the wild.</h2>
+        <p style="font-size:1.05rem; margin-bottom: 24px;">
+          See WEAR THE RISE styled for the open savanna, dust-blown desert mornings, and unhurried city evenings. Real fabric, real light, real Africa.
+        </p>
+        <a href="lookbook.html" class="btn btn-dark">Browse the Lookbook</a>
+      </div>
+      <div><img src="images/lookbook-1.png" alt="Lookbook" style="border-radius: 6px;"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<div class="container">
+  <p class="pull-quote fade-in">Wear The Rise makes me feel ready for anything.</p>
+</div>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <h2>Be among the first to rise.</h2>
+  <p>Order direct from Maun. Local Botswana delivery in 1–3 days. International on request.</p>
+  <a href="shop.html" class="btn btn-primary">Start Shopping</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Wear The Rise</div>
+        <p style="color: rgba(255,255,255,0.7); max-width: 320px;">Premium safari-inspired clothing, crafted in Maun, Botswana. Rise in the wild. Dress for the journey.</p>
+      </div>
+      <div><h5>Shop</h5><ul><li><a href="shop.html">All Products</a></li><li><a href="collections.html">Collections</a></li><li><a href="lookbook.html">Lookbook</a></li></ul></div>
+      <div><h5>The Brand</h5><ul><li><a href="about.html">About Us</a></li><li><a href="community.html">Rise Stories</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h5>Contact</h5><ul><li><a href="tel:+26774396369">+267 74 396 369</a></li><li><a href="tel:+26778088363">+267 78 088 363</a></li><li><a href="mailto:info@boseleholdings.co.bw">info@boseleholdings.co.bw</a></li><li>Maun, Botswana</li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Bosele Limited Holdings — WEAR THE RISE. All rights reserved.</div>
+      <div>Prices in BWP (Botswana Pula).</div>
+    </div>
+  </div>
+</footer>
+
+<div class="cart-overlay" onclick="closeCart()"></div>
+<aside class="cart-drawer">
+  <div class="cart-header"><h3>Your Cart</h3><button class="cart-close" onclick="closeCart()">×</button></div>
+  <div class="cart-items"></div>
+  <div class="cart-footer">
+    <div class="cart-total"><span>Total</span><span class="cart-total-amount">P 0</span></div>
+    <button class="btn btn-primary" style="width:100%" onclick="checkoutWhatsapp()">Checkout via WhatsApp</button>
+  </div>
+</aside>
+
+<a href="https://wa.me/26774396369?text=Hi%20WEAR%20THE%20RISE%2C%20I'd%20like%20to%20order..." target="_blank" class="wa-fab" aria-label="Order on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
